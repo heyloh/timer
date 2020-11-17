@@ -6,15 +6,18 @@ let seconds = 0;
 let timer;
 
 start.addEventListener('click', (event) => {
+  clock.classList.remove('paused');
   handleInitClock();
 });
 
 pause.addEventListener('click', (event) => {
   clearInterval(timer);
+  clock.classList.add('paused');
 });
 
 stop.addEventListener('click', (event) => {
   clearInterval(timer);
+  clock.classList.remove('paused');
   clock.innerHTML = '00:00:00';
   seconds = 0;
 });

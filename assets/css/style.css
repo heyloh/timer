@@ -5,6 +5,7 @@
   --primary-color-darker: rgb(47, 9, 92);
   --button-color: rgb(5, 153, 74);
   --button-color-darker: rgb(16, 116, 63);
+  --paused-color: rgb(197, 40, 40);
 }
 * {
   box-sizing: border-box;
@@ -54,4 +55,8 @@ body {
 
 .clock {
   font-size: 3em;
+}
+
+.paused {
+  color: var(--paused-color);
 }
