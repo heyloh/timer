@@ -1,7 +1,7 @@
-function handleReturnClockTime(seconds) {
-  const date = new Date(seconds * 1000);
-  return date.toLocaleTimeString('pt-BR', {
-    hour12: false,
-    timeZone: 'GMT'
-  });
+
+function handleInitClock() {
+  timer = setInterval(function () {
+    seconds++;
+    clock.innerHTML = handleReturnClockTime(seconds);
+  }, 1000);
 }
